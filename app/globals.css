@@ -1,0 +1,244 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@import "aos/dist/aos.css";
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+.HeaderBackground {
+  background-image: url("https://res.cloudinary.com/dlikxo3e2/image/upload/v1758870435/photo_2025-09-25_16-53-57_jc3hly_c_pad_b_gen_fill_w_1920_h_1080_ar_16_9_e1bqbn.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.HeaderGradientBackground {
+  background: linear-gradient(
+    0deg,
+    rgba(20, 108, 148, 1) 0%,
+    rgba(175, 211, 226, 1) 50%,
+    rgba(246, 241, 241, 1) 100%
+  );
+}
+
+.margin-auto {
+  margin: 0 auto;
+}
+
+.menu-link {
+  position: relative;
+  display: inline-block;
+}
+
+.menu-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px; /* відступ від тексту */
+  width: 0%;
+  height: 2px;
+  background-color: #2563eb; /* синій колір */
+  transition: width 0.3s ease-in-out;
+}
+
+.menu-link:hover::after {
+  width: 100%;
+}
+
+.ArialFont {
+  font-family: Arial, sans-serif;
+}
+
+.InterFont {
+  font-family: "Inter", sans-serif;
+}
+
+.StickyHeader {
+  position: sticky;
+  top: 0;
+}
+
+.custum-file-upload {
+  height: 200px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  gap: 20px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed #cacaca;
+  background-color: rgba(255, 255, 255, 1);
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0px 48px 35px -48px rgba(0, 0, 0, 0.1);
+}
+
+.custum-file-upload .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custum-file-upload .icon svg {
+  height: 80px;
+  fill: rgba(75, 85, 99, 1);
+}
+
+.custum-file-upload .text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custum-file-upload .text span {
+  font-weight: 400;
+  color: rgba(75, 85, 99, 1);
+}
+
+.custum-file-upload input {
+  display: none;
+}
+
+.anim-wrapper {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 500ms ease, transform 500ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.enter-left {
+  opacity: 1;
+  transform: translateX(0);
+}
+.enter-right {
+  opacity: 1;
+  transform: translateX(0);
+}
+.enter-top {
+  opacity: 1;
+  transform: translateY(0);
+}
+.enter-bottom {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* початкові позиції для анімації — встановимо через псевдокласи коли class додають */
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.anim-wrapper.enter-left {
+  transform: translateX(0);
+}
+.anim-wrapper:not(.enter-left) {
+  transform: translateX(-24px);
+}
+.anim-wrapper.enter-right {
+  transform: translateX(0);
+}
+.anim-wrapper:not(.enter-right) {
+  transform: translateX(24px);
+}
+.anim-wrapper.enter-top {
+  transform: translateY(0);
+}
+.anim-wrapper:not(.enter-top) {
+  transform: translateY(-24px);
+}
+.anim-wrapper.enter-bottom {
+  transform: translateY(0);
+}
+.anim-wrapper:not(.enter-bottom) {
+  transform: translateY(24px);
+}
+.anim-wrapper.enter-left,
+.anim-wrapper.enter-right,
+.anim-wrapper.enter-top,
+.anim-wrapper.enter-bottom {
+  opacity: 1;
+}
+
+/*Animation*/
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-in-on-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+}
+.fade-in-on-scroll.opacity-100 {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-left {
+  transform: translateY(-50px);
+}
+
+.fade-right {
+  transform: translateX(50px);
+}
+
+.fade-zoom {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-zoom.show {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.text-box {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.text-box.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.Spell {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.Spell span {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.Spell span.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Christmas Lights Animation */
