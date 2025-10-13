@@ -1,16 +1,9 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter, Roboto_Mono } from "next/font/google";
+
+const inter = Inter({ subsets: ["latin"] });
+const mono = Roboto_Mono({ subsets: ["latin"] });
 import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "Christmas Light Installation Services in Toronto | Skyshine",
@@ -27,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head />
-      <body>{children}</body>
+      <body className={`${inter.className} ${mono.className}`}>{children}</body>
     </html>
   );
 }
