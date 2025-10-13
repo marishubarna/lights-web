@@ -4,6 +4,10 @@
 @import "aos/dist/aos.css";
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
+body {
+  font-family: "Inter", "Roboto Mono", sans-serif;
+}
+
 .HeaderBackground {
   background-image: url("https://res.cloudinary.com/dlikxo3e2/image/upload/v1758870435/photo_2025-09-25_16-53-57_jc3hly_c_pad_b_gen_fill_w_1920_h_1080_ar_16_9_e1bqbn.jpg");
   background-size: cover;
