@@ -1,25 +1,16 @@
-import type { Metadata } from "next";
 import { Inter, Roboto_Mono } from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
-const mono = Roboto_Mono({ subsets: ["latin"] });
 import "./globals.css";
 
-export const metadata: Metadata = {
-  title: "Christmas Light Installation Services in Toronto | Skyshine",
-  icons: {
-    icon: "https://res.cloudinary.com/dlikxo3e2/image/upload/v1758813109/favicon_zqtcow.png",
-  },
-};
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+const mono = Roboto_Mono({ subsets: ["latin"], variable: "--font-mono" });
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en" className={`${inter.className} ${mono.className}`}>
-      <head />
+    <html lang="en" className={`${inter.variable} ${mono.variable}`}>
       <body>{children}</body>
     </html>
   );
