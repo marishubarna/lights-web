@@ -14,7 +14,7 @@ import ChristmasLayout from "../componnents/animation/ChristmasLayout"; // Ім�
 
 export default function Home() {
   return (
-    <div className="relative ">
+    <div className="relative bg-white">
       <Animation animation="fade-down" delay={0.3}>
         <div className="StickyHeader" style={{ position: "sticky", top: 0 }}>
           <HeaderMenu />
@@ -34,7 +34,7 @@ export default function Home() {
 
       {/* Christmas Layout */}
       <div className="flex flex-col lg:flex-row justify-center items-center lg:items-stretch">
-        <div className="w-full py-12 lg:py-0">
+        <div className="w-full py-0">
           <Animation animation="fade-down" delay={0.3}>
             <ChristmasLayout />
           </Animation>

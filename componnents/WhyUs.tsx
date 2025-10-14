@@ -40,7 +40,7 @@ export default function WhyUs() {
       <div className="flex flex-col items-center text-center px-4">
         <h1
           ref={titleRef}
-          className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-white w-full max-w-7xl"
+          className="text-5xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-white w-full max-w-7xl"
         >
           Christmas Light Installation Services in Toronto Skyshine
         </h1>
