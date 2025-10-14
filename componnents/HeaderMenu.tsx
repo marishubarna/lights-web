@@ -188,7 +188,7 @@ export default function HeaderMenu() {
         <input id="my-drawer-5" type="checkbox" className="drawer-toggle" />
         <div className="drawer-side">
           <label htmlFor="my-drawer-5" className="drawer-overlay"></label>
-          <div className="menu bg-white min-h-full w-80 p-4 text-base relative">
+          <div className="menu bg-white min-h-full w-[400px] p-4 text-base relative">
             {/* Close button */}
             <label
               htmlFor="my-drawer-5"
@@ -211,7 +211,7 @@ export default function HeaderMenu() {
             </label>
 
             {/* Menu items */}
-            <ul className="grid grid-cols-1 items-center text-[15px] font-medium gap-6">
+            <ul className="grid grid-cols-1 mt-10 w-full items-center text-[15px] font-medium gap-6">
               {HeaderMenuItem.map((item) => (
                 <React.Fragment key={item.id}>
                   <li className="group relative">
@@ -257,13 +257,16 @@ export default function HeaderMenu() {
                   {item.name === "Google reviews" && (
                     <ul className="menu menu-horizontal px-1 text-[15px] font-medium gap-6">
                       {MultiLevelMenuData.map((multiLevelItem) => (
-                        <li key={multiLevelItem.id}>
+                        <li key={multiLevelItem.id} className="group w-fit">
                           <details>
                             <summary className="relative text-gray-800 transition-all duration-300 group-hover:text-blue-600 px-2 py-1">
                               {multiLevelItem.submenuTitle}
                               <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
                             </summary>
-                            <ul className="p-2 w-48 bg-white shadow-lg border border-gray-200">
+                            <ul
+                              style={{ zIndex: 10 }}
+                              className="p-2 w-64 bg-white shadow-lg border  border-gray-200"
+                            >
                               {multiLevelItem.submenuItems.map((subItem) => (
                                 <li key={subItem.id}>
                                   <details>

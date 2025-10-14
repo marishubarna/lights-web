@@ -12,7 +12,7 @@ const ChristmasLights = () => {
         justifyContent: "center",
         alignItems: "center",
       }}
-      className="mt-0  lg:mt-14 "
+      className=""
     >
       <Lottie animationData={christmasLights} loop={true} autoplay={true} />
     </div>
