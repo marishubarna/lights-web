@@ -3,7 +3,7 @@
 
 @import "aos/dist/aos.css";
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 body {
   font-family: "Inter", "Roboto Mono", sans-serif;
 }
@@ -14,6 +14,27 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
+}
+
+/* Стиль для input */
+input {
+  background-color: white !important; /* Фіксований білий фон */
+  border: 2px solid #5d5d5d !important; /* Чорна рамка */
+  color: #292929; /* Чорний текст */
+}
+
+/* Для select */
+select {
+  background-color: white !important;
+  border: 2px solid #292929 !important;
+  color: #292929;
+}
+
+/* Для textarea */
+textarea {
+  background-color: white !important;
+  border: 2px solid #000000 !important;
+  color: #000000;
 }
 
 .HeaderGradientBackground {
@@ -55,6 +76,10 @@ body {
 
 .InterFont {
   font-family: "Inter", sans-serif;
+}
+
+.PacificoFont {
+   font-family: "Pacifico", cursive;
 }
 
 .StickyHeader {

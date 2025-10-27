@@ -5,11 +5,11 @@ export default function Cards() {
   return (
     <div>
       {/* Перший div із першими двома елементами */}
-      <div className="flex flex-wrap justify-center gap-4">
+      <div className="flex  flex-wrap justify-center gap-4">
         {OurServicesCards.slice(0, 2).map((card, index) => (
           <div
             key={card.id}
-            className="card w-full sm:w-96 bg-base-100 shadow-xl m-4"
+            className="card w-full sm:w-96 bg-white text-black shadow-xl m-4"
             data-aos="fade-up"
             data-aos-delay={index * 200} // Затримка для кожної картки
           >
@@ -29,7 +29,7 @@ export default function Cards() {
         {OurServicesCards.slice(2).map((card, index) => (
           <div
             key={card.id}
-            className="card w-full sm:w-96 bg-base-100 shadow-xl m-4"
+            className="card w-full sm:w-96 bg-white text-black shadow-xl m-4"
             data-aos="fade-up"
             data-aos-delay={(index + 2) * 200} // Затримка для кожної картки
           >

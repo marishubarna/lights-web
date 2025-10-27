@@ -33,7 +33,7 @@ export default function PinterestImages() {
       id="pinterest-images"
       className="max-w-fit mx-auto py-16 px-4 bg-gray-50"
     >
-      <h2 className="text-4xl sm:text-5xl font-extrabold text-center mb-10">
+      <h2 className="text-4xl sm:text-5xl text-black font-extrabold text-center mb-10">
         OUR<span className="text-amber-400">WORK</span>
       </h2>
 

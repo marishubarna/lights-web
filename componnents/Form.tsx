@@ -122,59 +122,62 @@ export default function ContactForm() {
             ))}
           </div>
         ) : (
-          <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
+          <form
+            onSubmit={handleSubmit(onSubmit)}
+            className="space-y-4 bg-white"
+          >
             <h2>Contact details</h2>
 
             <div className="grid grid-cols-2 gap-4">
               <input
                 {...register("firstName", { required: true })}
                 placeholder="First Name"
-                className="input input-bordered w-full fade-in-item"
+                className="input bg-white input-bordered w-full fade-in-item"
               />
               <input
                 {...register("lastName", { required: true })}
                 placeholder="Last Name"
-                className="input input-bordered w-full fade-in-item"
+                className="input bg-white border-b-black input-bordered w-full fade-in-item"
               />
             </div>
 
             <input
               {...register("email", { required: true })}
               placeholder="Email"
-              className="input input-bordered w-full fade-in-item"
+              className="input bg-white input-bordered w-full fade-in-item"
             />
             <input
               {...register("company")}
               placeholder="Company"
-              className="input input-bordered w-full fade-in-item"
+              className="input bg-white input-bordered w-full fade-in-item"
             />
 
             <input
               {...register("phone")}
               placeholder="Phone"
-              className="input input-bordered w-full fade-in-item"
+              className="input bg-white input-bordered w-full fade-in-item"
             />
             <input
               {...register("streetAddress")}
               placeholder="Street Address"
-              className="input input-bordered w-full fade-in-item"
+              className="input bg-white input-bordered w-full fade-in-item"
             />
             <input
               {...register("unit")}
               placeholder="Unit, Suite, Apt (optional)"
-              className="input input-bordered w-full fade-in-item"
+              className="input bg-white input-bordered w-full fade-in-item"
             />
 
             <div className="grid grid-cols-3 gap-4">
               <input
                 {...register("city")}
                 placeholder="City"
-                className="input input-bordered w-full fade-in-item"
+                className="input bg-white input-bordered w-full fade-in-item"
               />
               <select
                 {...register("province")}
                 defaultValue="Province"
-                className="select select-md fade-in-item"
+                className="select bg-white select-md fade-in-item"
               >
                 <option disabled>Select</option>
                 <option>Alberta</option>
@@ -187,16 +190,16 @@ export default function ContactForm() {
               <input
                 {...register("postCode")}
                 placeholder="Post Code"
-                className="input input-bordered w-full fade-in-item"
+                className="input bg-white input-bordered w-full fade-in-item"
               />
             </div>
 
             {/* === Service Details Section === */}
             <div className="fade-in-item mt-8">
-              <h3 className="text-xl font-semibold mb-4">Service Details</h3>
-              <p className="mb-2">What services are you looking for?</p>
+              {/* <h3 className="text-xl font-semibold mb-4">Service Details</h3>
+              <p className="mb-2">What services are you looking for?</p> */}
 
-              <div className="flex flex-col gap-2 mb-4">
+              {/* <div className="flex bg-white flex-col gap-2 mb-4">
                 {[
                   "Interior Window Cleaning",
                   "Exterior Window Cleaning",
@@ -206,30 +209,33 @@ export default function ContactForm() {
                   "Power Wash",
                   "Christmas Lights",
                 ].map((service) => (
-                  <label key={service} className="flex items-center gap-2">
+                  <label
+                    key={service}
+                    className="flex bg-white items-center gap-2"
+                  >
                     <input
                       type="checkbox"
                       {...register("services")}
                       value={service}
-                      className="checkbox"
+                      className="checkbox bg-white"
                     />
                     <span>{service}</span>
                   </label>
                 ))}
-              </div>
+              </div> */}
 
-              <label className="block mb-2 text-sm">
+              {/* <label className="block mb-2 text-sm">
                 Please provide as much information as you can
               </label>
               <textarea
                 {...register("description")}
                 placeholder="Describe the work to be done..."
                 className="textarea textarea-bordered w-full h-24"
-              ></textarea>
+              ></textarea> */}
             </div>
 
             {/* === Upload Images Section === */}
-            <div className="fade-in-item w-full mt-6">
+            {/* <div className="fade-in-item w-full mt-6">
               <h3 className="text-lg font-semibold mb-1">Upload images</h3>
               <div className="flex justify-between items-center">
                 <p className="text-sm mb-3">
@@ -239,9 +245,9 @@ export default function ContactForm() {
                   {images.length}/10
                 </p>
               </div>
-            </div>
+            </div> */}
 
-            <div className="col-span-full">
+            {/* <div className="col-span-full">
               <label
                 htmlFor="cover-photo"
                 className="block text-sm font-medium text-gray-900"
@@ -274,7 +280,6 @@ export default function ContactForm() {
                 </div>
               </div>
 
-              {/* Preview of uploaded images */}
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mt-4">
                 {images.map((img, index) => (
                   <div key={index} className="relative group">
@@ -293,7 +298,7 @@ export default function ContactForm() {
                   </div>
                 ))}
               </div>
-            </div>
+            </div> */}
 
             {/* === Footer === */}
             <div className="text-xs text-blue-400 mt-6">

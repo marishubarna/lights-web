@@ -34,13 +34,9 @@ export default function HeaderMenu() {
       <div className="navbar bg-white max-w-7xl mx-auto px-4 py-3 relative z-[1010] border-b border-gray-200">
         {/* --- LOGO --- */}
         <div className="flex-1">
-          <a href="/" className="flex items-center">
-            <img
-              src="https://res.cloudinary.com/dlikxo3e2/image/upload/v1758812632/logo_n0knhs.svg"
-              alt="Skyshine logo"
-              className="h-12 w-auto"
-            />
-          </a>
+          <h1 className="PacificoFont text-center text-[#324ef1]">
+            Skyshine <br /> Christmas installers
+          </h1>
         </div>
 
         {/* --- DESKTOP MENU --- */}

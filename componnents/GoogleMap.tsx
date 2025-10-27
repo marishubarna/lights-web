@@ -33,12 +33,19 @@ const cities = [
   "Vaughan",
   "Markham",
   "Oshawa",
+  "Etobicoke",
+  "North York ",
+  "Scarborough",
+  "Bolton",
+  "Nobleton",
+  "Kleinburg",
+  "Caledon",
 ];
 
 export default function GoogleMap() {
   return (
     <section className="bg-[#2B2B2F] text-white py-16">
-      <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+      <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-stretch">
         {/* LEFT SIDE - CITIES */}
         <div>
           <h2 className="text-4xl font-extrabold mb-8 uppercase">
@@ -58,11 +65,11 @@ export default function GoogleMap() {
         </div>
 
         {/* RIGHT SIDE - MAP + REVIEWS */}
-        <div className="relative">
+        <div className="relative flex">
           <img
             src="https://res.cloudinary.com/dlikxo3e2/image/upload/v1760305368/%D0%97%D0%BD%D1%96%D0%BC%D0%BE%D0%BA_%D0%B5%D0%BA%D1%80%D0%B0%D0%BD%D0%B0_2025-10-12_233226_z4maox.png"
             alt=""
-            className="w-full h-full max-w-[100%] max-h-[100%] rounded-2xl shadow-lg"
+            className="w-full h-full object-cover rounded-2xl shadow-lg"
           />
         </div>
       </div>

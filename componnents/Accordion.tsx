@@ -12,7 +12,7 @@ export default function Accordion() {
 
   return (
     <section className="max-w-4/5 mx-auto py-16 px-4 ">
-      <h2 className="text-4xl sm:text-5xl font-extrabold text-left mb-10">
+      <h2 className="text-4xl sm:text-5xl text-black font-extrabold text-left mb-10">
         FREQUENTLY ASKED <span className="text-amber-400">QUESTIONS</span>
       </h2>
 
