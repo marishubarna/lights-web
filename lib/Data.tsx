@@ -363,13 +363,13 @@ const OurServicesCards = [
     description:
       "Our team of trained and certified cleaners uses the latest techniques and equipment to deliver top-notch results.",
   },
-  {
-    id: 2,
-    title: "Comprehensive Services",
-    img: "https://res.cloudinary.com/dlikxo3e2/image/upload/v1758812748/mp_huztpz.svg",
-    description:
-      "From high-rise buildings to storefronts, we handle all types of commercial window cleaning projects with precision and care.",
-  },
+  // {
+  //   id: 2,
+  //   title: "Comprehensive Services",
+  //   img: "https://res.cloudinary.com/dlikxo3e2/image/upload/v1758812748/mp_huztpz.svg",
+  //   description:
+  //     "From high-rise buildings to storefronts, we handle all types of commercial window cleaning projects with precision and care.",
+  // },
   {
     id: 3,
     title: "Competitive Prices",

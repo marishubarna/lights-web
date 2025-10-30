@@ -5,20 +5,35 @@ const footerLinks = [
   { name: "About Us", href: "https://skyshinewindowcleaning.ca/about-us/" },
   {
     name: "Our work",
-    href: "https://skyshinewindowcleaning.ca/service/christmas-light-installation-services-in-canada-skyshine/#section-work",
+    href: "#pinterest-images", // changed to internal anchor
   },
   {
     name: "Google reviews",
-    href: "https://skyshinewindowcleaning.ca/service/christmas-light-installation-services-in-canada-skyshine/#section-reviews",
+    href: "#section-reviews", // changed to internal anchor
   },
   {
     name: "Service area",
-    href: "https://skyshinewindowcleaning.ca/service/christmas-light-installation-services-in-canada-skyshine/#section-service-area",
+    href: "#section-service-area", // changed to internal anchor
   },
   { name: "Blog", href: "https://skyshinewindowcleaning.ca/blog/" },
 ];
 
 export default function Footer() {
+  // Smooth scroll for internal anchors
+  const handleAnchorClick = (e: React.MouseEvent, href: string) => {
+    if (href.startsWith("#")) {
+      e.preventDefault();
+      const id = href.slice(1);
+      const el = document.getElementById(id);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth", block: "start" });
+      } else {
+        // fallback: set location.hash so browser can try
+        window.location.hash = href;
+      }
+    }
+  };
+
   return (
     <footer
       style={{ padding: "70px 15px" }}
@@ -48,6 +63,7 @@ export default function Footer() {
                 <li key={item.name} className="group w-fit">
                   <a
                     href={item.href}
+                    onClick={(e) => handleAnchorClick(e, item.href)}
                     className="relative text-white text-xl transition-all duration-300 group-hover:text-blue-700"
                   >
                     {item.name}
