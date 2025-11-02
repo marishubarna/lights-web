@@ -214,7 +214,7 @@ const OurWorkImages = [
   },
   {
     id: 5,
-    img: "https://res.cloudinary.com/dlikxo3e2/image/upload/v1758812273/photo_2025-09-25_16-52-19_uqmrfg.jpg",
+    img: "https://res.cloudinary.com/dlikxo3e2/image/upload/v1762082225/photo_2025-09-25_16-52-24_jorg9j_c_crop_ar_3_4_vwzqrc.jpg",
     alt: "",
   },
   {
@@ -312,6 +312,11 @@ const OurWorkImages = [
     img: "https://res.cloudinary.com/dlikxo3e2/image/upload/v1758812252/photo_2025-09-25_16-53-35_cztewy.jpg",
     alt: "",
   },
+  // {
+  //   id: 25,
+  //   img: "https://res.cloudinary.com/dlikxo3e2/image/upload/v1762082225/photo_2025-09-25_16-52-19_uqmrfg_c_crop_ar_3_4_qazntj.jpg",
+  //   alt: "",
+  // },
 ];
 
 const FAQ = [

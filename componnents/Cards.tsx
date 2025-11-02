@@ -6,7 +6,7 @@ export default function Cards() {
     <div>
       {/* Перший div із першими двома елементами */}
       <div className="flex  flex-wrap justify-center gap-4">
-        {OurServicesCards.slice(0, 2).map((card, index) => (
+        {OurServicesCards.slice(0, 1).map((card, index) => (
           <div
             key={card.id}
             className="card w-full sm:w-96 bg-white text-black shadow-xl m-4"
@@ -26,7 +26,7 @@ export default function Cards() {
 
       {/* Другий div із рештою трьох елементів */}
       <div className="flex flex-wrap justify-center gap-4">
-        {OurServicesCards.slice(2).map((card, index) => (
+        {OurServicesCards.slice(1, 4).map((card, index) => (
           <div
             key={card.id}
             className="card w-full sm:w-96 bg-white text-black shadow-xl m-4"
